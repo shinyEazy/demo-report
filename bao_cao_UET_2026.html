@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo cáo Phân tích Danh sách Trúng tuyển UET 2026</title>
+<style>
+  :root {
+    --primary: #1a3a5c;
+    --accent: #0d6efd;
+    --dark: #2c3e50;
+    --light: #f4f6f8;
+    --muted: #6c757d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--dark);
+    background: #eef1f5;
+    line-height: 1.65;
+  }
+  .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+  header {
+    background: linear-gradient(135deg, var(--primary) 0%, #2c5f8a 100%);
+    color: #fff;
+    padding: 40px 24px;
+    text-align: center;
+  }
+  header h1 { font-size: 1.9em; margin-bottom: 8px; font-weight: 700; }
+  header p { opacity: 0.9; font-size: 1.05em; }
+  .card {
+    background: #fff; border-radius: 10px; padding: 28px 30px;
+    margin: 22px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+  h2 {
+    color: var(--primary); font-size: 1.45em; margin-bottom: 14px;
+    padding-bottom: 8px; border-bottom: 3px solid var(--accent);
+  }
+  h3 { color: var(--dark); margin: 18px 0 8px; font-size: 1.1em; }
+  p { margin-bottom: 12px; }
+  .kpi-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 14px; margin: 16px 0;
+  }
+  .kpi {
+    background: var(--light); border-radius: 8px; padding: 18px;
+    text-align: center; border-top: 4px solid var(--accent);
+  }
+  .kpi .num { font-size: 2em; font-weight: 800; color: var(--primary); }
+  .kpi .lbl { color: var(--muted); font-size: 0.9em; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.92em; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #e3e8ee; }
+  th { background: var(--primary); color: #fff; }
+  tr:nth-child(even) { background: #f8fafc; }
+  img { max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 10px auto; }
+  figure { margin: 18px 0; }
+  figcaption { text-align: center; color: var(--muted); font-size: 0.88em; margin-top: 6px; }
+  .takeaway {
+    background: #eef6ff; border-left: 5px solid var(--accent);
+    padding: 14px 18px; border-radius: 6px; margin: 14px 0;
+  }
+  .takeaway strong { color: var(--primary); }
+  ul { padding-left: 22px; margin-bottom: 12px; }
+  li { margin-bottom: 8px; }
+  .highlight { background: #fff3cd; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); padding: 24px; font-size: 0.85em; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .two-col { grid-template-columns: 1fr; } }
+  .pill { display:inline-block; background:var(--accent); color:#fff; padding:2px 10px; border-radius:12px; font-size:0.8em; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Kết quả trúng tuyển Đại học Công nghệ – ĐHQGHN (UET) năm 2026</h1>
+  <p>Phân tích dữ liệu 4.285 thí sinh trúng tuyển theo 20 ngành đào tạo</p>
+  <p style="margin-top:8px;font-size:0.9em;">Ngày lập báo cáo: 14 tháng 8 năm 2026</p>
+</header>
+
+<div class="container">
+
+  <!-- ĐIỂM QUAN TRỌNG -->
+  <div class="card">
+    <h2>Những điều quan trọng nhất</h2>
+    <div class="takeaway"><strong>1. Khối ngành CNTT – Kỹ thuật công nghệ chiếm áp đảo:</strong> 3.157 thí sinh (≈74% tổng số) trúng tuyển vào các ngành công nghệ thông tin, máy tính và điện tử viễn thông.</div>
+    <div class="takeaway"><strong>2. Chênh lệch điểm trúng tuyển rất lớn giữa các ngành:</strong> Điểm trung bình cao nhất (Kỹ thuật điều khiển và tự động hoá, ~28,35) cao hơn <span class="highlight">5,3 điểm</span> so với ngành thấp nhất (Công nghệ nông nghiệp, ~23,04).</div>
+    <div class="takeaway"><strong>3. Điểm trung bình chung đạt mức rất cao:</strong> Trung bình <span class="highlight">26,64/30</span>, trung vị 26,75 – cho thấy mặt bằng điểm đầu vào của trường rất cạnh tranh.</div>
+    <div class="takeaway"><strong>4. 5 ngành có quy mô lớn nhất thu hút 2.145 thí sinh (50% tổng số),</strong> trong đó Kỹ thuật điện tử - viễn thông là ngành đông nhất với 502 sinh viên.</div>
+  </div>
+
+  <!-- TỔNG QUAN DỮ LIỆU -->
+  <div class="card">
+    <h2>Khung dữ liệu</h2>
+    <p>Bộ dữ liệu gồm <strong>4.285 hồ sơ</strong> thí sinh chính thức trúng tuyển, tương ứng với 4.255 thí sinh xét theo điểm thi (99,3%) và 30 thí sinh thuộc diện tuyển thẳng / chế độ ưu tiên DBDT. Ghi nhận đầy đủ ở cả 5 trường thông tin, không thiếu dữ liệu.</p>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="num">4.285</div><div class="lbl">Thí sinh trúng tuyển</div></div>
+      <div class="kpi"><div class="num">20</div><div class="lbl">Ngành đào tạo</div></div>
+      <div class="kpi"><div class="num">26,64</div><div class="lbl">Điểm TB toàn bộ</div></div>
+      <div class="kpi"><div class="num">30,0</div><div class="lbl">Điểm trúng tuyển tối đa</div></div>
+      <div class="kpi"><div class="num">74%</div><div class="lbl">Thí sinh khối CNTT</div></div>
+    </div>
+    <p>Các trường thông tin gồm: <em>Mã sinh viên</em>, <em>Họ tên</em>, <em>Điểm trúng tuyển</em>, <em>Mã xét tuyển</em> và <em>Ngành trúng tuyển</em>. Riêng cột điểm có 30 giá trị đặc biệt ("Tuyển thẳng", "DBDT") được tách riêng khi phân tích định lượng.</p>
+  </div>
+
+  <!-- PHÂN PHỐI ĐIỂM -->
+  <div class="card">
+    <h2>Mặt bằng điểm rất cao, tập trung ở khoảng 26–28 điểm</h2>
+    <p>Phân phối điểm trúng tuyển có dạng lệch âm rõ rệt, đỉnh rơi vào khoảng <strong>26–27 điểm</strong>. Gần 2/3 số thí sinh (2.504 người, ≈59%) đạt từ 26 đến 28 điểm. Số thí sinh đạt điểm tuyệt đối <strong>30 là 23 em</strong>, và có tới <strong>687 em (16%) đạt từ 28 điểm trở lên</strong>.</p>
+    <figure>
+      <img src="phanphoi_diem.png" alt="Phân phối điểm trúng tuyển">
+      <figcaption>Biểu đồ phân phối điểm trúng tuyển và số thí sinh theo khoảng điểm</figcaption>
+    </figure>
+    <div class="two-col">
+      <p>Khoảng cách giữa điểm thấp nhất (22,00) và cao nhất (30,00) là <strong>8 điểm</strong>. Phần đuôi trái (dưới 26 điểm) chỉ chiếm khoảng 25% thí sinh, cho thấy rào cản điểm số vào UET ở mức cao và tương đối đồng nhất.</p>
+      <p>Đáng chú ý, có <strong>190 thí sinh đạt 29 điểm trở lên</strong> – nhóm thủ khoa tiềm năng, chủ yếu tập trung ở Công nghệ thông tin và Khoa học máy tính.</p>
+    </div>
+  </div>
+
+  <!-- QUY MÔ NGÀNH -->
+  <div class="card">
+    <h2>Quy mô tuyển sinh phân bố không đồng đều</h2>
+    <p>Ba ngành lớn nhất — <strong>Kỹ thuật điện tử - viễn thông (502), Công nghệ thông tin (472) và Kỹ thuật máy tính (434)</strong> — cùng 5 ngành đông nhất chiếm một nửa tổng chỉ tiêu. Ngược lại, các ngành như Công nghệ nông nghiệp (34), Công nghệ sinh học (71), Kỹ thuật năng lượng (70) và Cơ kỹ thuật (73) có quy mô rất nhỏ.</p>
+    <figure>
+      <img src="soluong_nganh.png" alt="Số lượng thí sinh theo ngành">
+      <figcaption>Số lượng thí sinh trúng tuyển theo từng ngành đào tạo</figcaption>
+    </figure>
+    <p>Quy mô phản ánh rõ định hướng của trường: ưu tiên mạnh cho các ngành CNTT, điện tử và tự động hóa — những lĩnh vực đang có nhu cầu nhân lực lớn.</p>
+  </div>
+
+  <!-- ĐIỂM THEO NGÀNH -->
+  <div class="card">
+    <h2>Điểm trúng tuyển cao nhất thuộc về khối điều khiển – AI – dữ liệu</h2>
+    <p>Xét theo điểm trung bình, các ngành có yêu cầu điểm cao nhất là <strong>Kỹ thuật điều khiển và tự động hoá (28,35)</strong>, <strong>Khoa học máy tính (27,92)</strong>, <strong>Trí tuệ nhân tạo (27,61)</strong> và <strong>Khoa học dữ liệu (27,61)</strong>. Ngược lại, Công nghệ nông nghiệp (~23,04), Công nghệ sinh học (~23,45) và Kỹ thuật xây dựng (~23,53) có điểm trung bình thấp nhất.</p>
+    <figure>
+      <img src="diemtb_nganh.png" alt="Điểm trúng tuyển trung bình theo ngành">
+      <figcaption>Điểm trúng tuyển trung bình xếp hạng theo từng ngành</figcaption>
+    </figure>
+    <p>Khung boxplot dưới đây cho thấy không chỉ trung bình mà cả <strong>khoảng phân tán</strong> cũng khác biệt theo ngành. Những ngành "điểm cao" có dải phân vị hẹp và cao (điểm chuẩn tối thiểu đã nằm ở 26–27), trong khi các ngành ít cạnh tranh hơn có độ phân tán lớn hơn với nhiều thí sinh điểm thấp.</p>
+    <figure>
+      <img src="boxplot_nganh.png" alt="Phân bố điểm theo ngành">
+      <figcaption>Phân bố điểm trúng tuyển (IQR, trung bình và trung vị) theo từng ngành</figcaption>
+    </figure>
+  </div>
+
+  <!-- NHÓM NGÀNH -->
+  <div class="card">
+    <h2>Ba nhóm ngành với mức độ cạnh tranh khác biệt rõ rệt</h2>
+    <p>Chia 20 ngành thành 3 nhóm cho thấy bức tranh rõ nét hơn: khối <strong>CNTT - Kỹ thuật công nghệ</strong> chiếm 74% thí sinh với điểm trung bình 27,28; khối <strong>Kỹ thuật - Vật lý - Thiết kế</strong> chiếm khoảng 24% với điểm trung bình 25,02; còn khối <strong>Công nghệ sinh học - Nông nghiệp</strong> chỉ chiếm ~2,5% với điểm trung bình 23,31.</p>
+    <figure>
+      <img src="nhom_nganh.png" alt="Cơ cấu nhóm ngành">
+      <figcaption>Cơ cấu thí sinh theo nhóm ngành đào tạo</figcaption>
+    </figure>
+  </div>
+
+  <!-- QUAN HỆ QUY MÔ – ĐIỂM -->
+  <div class="card">
+    <h2>Quy mô lớn đi kèm điểm cạnh tranh cao</h2>
+    <p>Có mối quan hệ tương đối chặt giữa quy mô tuyển sinh và điểm trúng tuyển của ngành. Những ngành thu hút đông thí sinh nhất (CNTT, Khoa học máy tính, điện tử viễn thông) đồng thời cũng là những ngành có mức điểm đầu vào cao, phản ánh sức hút và độ cạnh tranh về chỉ tiêu của thị trường nhân lực công nghệ.</p>
+    <figure>
+      <img src="quy_mo_diem.png" alt="Quan hệ quy mô và điểm">
+      <figcaption>Quan hệ giữa số lượng thí sinh trúng tuyển và điểm trúng tuyển trung bình của ngành</figcaption>
+    </figure>
+  </div>
+
+  <!-- TOP NGÀNH -->
+  <div class="card">
+    <h2>Điểm chuẩn ước lượng theo ngành</h2>
+    <p>Dựa trên điểm thấp nhất ghi nhận trong danh sách, có thể ước lượng mức điểm chuẩn (điểm trúng tuyển tối thiểu) của từng ngành:</p>
+    <table>
+      <tr><th>Ngành</th><th>Điểm TB</th><th>Điểm thấp nhất (≈ chuẩn)</th><th>Số TS</th></tr>
+      <tr><td>Kỹ thuật điều khiển và tự động hoá</td><td><strong>28,35</strong></td><td>27,78</td><td>153</td></tr>
+      <tr><td>Khoa học máy tính</td><td>27,92</td><td>26,86</td><td>393</td></tr>
+      <tr><td>Trí tuệ nhân tạo</td><td>27,61</td><td>26,26</td><td>324</td></tr>
+      <tr><td>Khoa học dữ liệu</td><td>27,61</td><td>26,85</td><td>134</td></tr>
+      <tr><td>Kỹ thuật máy tính</td><td>27,47</td><td>26,63</td><td>434</td></tr>
+      <tr><td>Công nghệ thông tin</td><td>27,32</td><td>25,00</td><td>464</td></tr>
+      <tr><td>Kỹ thuật điện tử - viễn thông</td><td>26,93</td><td>26,29</td><td>502</td></tr>
+      <tr><td>Thiết kế công nghiệp và Đồ họa</td><td>24,38</td><td>23,00</td><td>269</td></tr>
+      <tr><td>Kỹ thuật xây dựng</td><td>23,53</td><td>22,51</td><td>178</td></tr>
+      <tr><td>Công nghệ sinh học</td><td>23,45</td><td>22,48</td><td>71</td></tr>
+      <tr><td>Công nghệ nông nghiệp</td><td><strong>23,04</strong></td><td>22,00</td><td>34</td></tr>
+    </table>
+    <p>Điểm chuẩn cao nhất (điều khiển - tự động hoá ở mức <strong>27,78</strong>) cao hơn điểm chuẩn thấp nhất (nông nghiệp, <strong>22,00</strong>) tới <strong>5,78 điểm</strong> — khoảng cách rất lớn cho thấy độ phân tầng giữa các ngành.</p>
+  </div>
+
+  <!-- KHUYẾN NGHỊ -->
+  <div class="card">
+    <h2>Ý nghĩa thực tiễn &amp; bước kế tiếp</h2>
+    <h3>Đối với nhà tuyển sinh – quản trị đào tạo</h3>
+    <ul>
+      <li><strong>Điều chỉnh chỉ tiêu theo cung - cầu:</strong> Cân nhắc mở rộng thêm chỉ tiêu các ngành điểm cao (AI, Khoa học dữ liệu) vì sức hút và năng lực thí sinh rất tốt, đồng thời tăng cường truyền thông cho các ngành có chỉ tiêu thấp.</li>
+      <li><strong>Chính sách thu hút nhân tài:</strong> Tập trung học bổng, chương trình tài năng cho nhóm 687 thí sinh đạt 28+ điểm, đặc biệt 23 thủ khoa 30 điểm.</li>
+      <li><strong>Đoàn tụ dữ liệu qua nhiều năm:</strong> So sánh với điểm chuẩn các năm trước (2024, 2025) để nhận diện chuỗi thời gian và xu hướng tăng của ngành AI/dữ liệu.</li>
+    </ul>
+    <h3>Gợi ý phân tích sâu thêm</h3>
+    <ul>
+      <li>Kết hợp dữ liệu chỉ tiêu, điểm thi THPT, và kết quả học tập sau nhập học (GPA) để đo lường mức điểm nào dự báo thành tích tốt nhất.</li>
+      <li>Phân tích phân bố theo tỉnh/thành (từ mã sinh viên) để đánh giá mức độ tập trung nguồn tuyển sinh theo địa bàn.</li>
+    </ul>
+  </div>
+
+  <!-- PHƯƠNG PHÁP -->
+  <div class="card">
+    <h2>Phương pháp &amp; giới hạn</h2>
+    <p>Phân tích dựa trên toàn bộ 4.285 hồ sơ của danh sách trúng tuyển chính thức. Các số liệu định lượng tính trên 4.255 thí sinh có điểm số (loại trừ 30 trường hợp tuyển thẳng/DBDT). <em>Điểm "trúng tuyển"</em> được coi là điểm xét tuyển cuối cùng đã gồm ưu tiên khu vực/đối tượng; do vậy "điểm chuẩn" ước lượng từ điểm thấp nhất chỉ mang tính tham khảo, có thể khác biệt với công bố chính thức của trường. Mã xét tuyển (CN1–CN21) được ánh xạ sang tên ngành theo bảng dữ liệu gốc; không ghi nhận giá trị thiếu hoặc trùng lặp gây nhiễu.</p>
+  </div>
+
+  <footer>
+    Báo cáo được tạo tự động bởi LAMBDA - Phân tích dữ liệu tuyển sinh UET 2026 · Ngày 14 tháng 8 năm 2026
+  </footer>
+
+</div>
+</body>
+</html>
